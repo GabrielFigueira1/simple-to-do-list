@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: 0px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body{
+  font: 400 14px sans-serif;
+  background: #e9e9e9;
+}
+
+input, button, textarea{
+  font: 400 16px sans-serif;
+}
+
+button{
+  cursor: pointer;
+  color: #3f3f3f;
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  width: auto;
+  font-weight: 700;
+  transition: filter 0.2s;
+  border: 0px;
+}
+
+button:hover{
+  filter: brightness(96%);
+}
+
+input[type=text]{
+  max-width: 800px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  padding: 0 12px;
+  margin-right: 6px;
+}
+input[type=checkbox]{
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  position: relative;
+  top: 11px;
+  min-width: 30px;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.container{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.content{
+  max-width: 800px;
+  justify-content: center;
+
+  margin: 20px 20px;
+}
+.header{
+  align-content: center;
+  display: flex;
+}
+
+body div + button{
+  background-color: transparent;
+}
+
+li {
+  display: flex;
+  align-items: baseline;
+}
+p {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+.completd{
+  font-size: 16px;
+  vertical-align: middle;
+  margin-left: 12px;
+  font-style: italic;
+  text-decoration: line-through;
+  color: #c4c4c4;
+}
+.completed{
+  line-height: 16px;
+  position: relative;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-left: 12px;
+  font-style: italic;
+  color: #c4c4c4;
+}
+.completed::after {
+  border-bottom: 2px solid #c4c4c4;
+  content: "";
+  left: -5px;
+  margin-top: calc(3px / 2 * -1);
+  position: absolute;
+  right: 15px;
+  top: 50%;
+}
